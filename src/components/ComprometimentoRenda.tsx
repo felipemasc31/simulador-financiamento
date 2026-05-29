@@ -1,5 +1,5 @@
 import { Card } from "@/components/Card";
-import { avaliarComprometimento } from "@/financiamento";
+import { avaliarComprometimento, COMPROMETIMENTO_LIMITE } from "@/financiamento";
 import { formatBRL, formatPercent } from "@/format";
 
 interface Props {
@@ -65,7 +65,7 @@ export function ComprometimentoRenda({
       </div>
 
       <p className="mt-2.5 text-[11px] text-slate-600 leading-relaxed">
-        Bancos geralmente aprovam até 30% da renda. Saldo restante:{" "}
+        Bancos geralmente aprovam até {COMPROMETIMENTO_LIMITE}% da renda. Saldo restante:{" "}
         <span className="text-slate-400 font-semibold">{formatBRL(saldoRestante)}/mês</span>
       </p>
     </Card>
