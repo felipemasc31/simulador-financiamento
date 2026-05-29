@@ -8,6 +8,11 @@ export function useSimulador() {
   const [meses, setMeses] = useState(48);
   const [rendaMensal, setRendaMensal] = useState(3_800);
 
+  const definirValorBem = (valor: number) => {
+    setValorBem(valor);
+    setEntrada((atual) => Math.min(atual, valor * 0.9));
+  };
+
   const resultado = simular({ valorBem, entrada, taxaMensal, meses, rendaMensal });
   const financiado = Math.max(valorBem - entrada, 0);
   const percentualEntrada = valorBem > 0 ? Math.round((entrada / valorBem) * 100) : 0;
@@ -18,7 +23,7 @@ export function useSimulador() {
     taxaMensal,
     meses,
     rendaMensal,
-    setValorBem,
+    setValorBem: definirValorBem,
     setEntrada,
     setTaxaMensal,
     setMeses,
