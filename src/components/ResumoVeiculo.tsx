@@ -29,11 +29,11 @@ export function ResumoVeiculo({
         </div>
         <div>
           <div className="text-[10px] text-slate-400 tracking-wider uppercase mb-1">Entrada</div>
-          <div className="text-[15px] font-bold text-indigo-300">{formatBRL(entrada)}</div>
+          <div className="text-[15px] font-bold text-accent-300">{formatBRL(entrada)}</div>
         </div>
         <div>
           <div className="text-[10px] text-slate-400 tracking-wider uppercase mb-1">Financiado</div>
-          <div className="text-[15px] font-bold text-indigo-400">{formatBRL(financiado)}</div>
+          <div className="text-[15px] font-bold text-accent-400">{formatBRL(financiado)}</div>
         </div>
       </div>
 
@@ -47,7 +47,7 @@ export function ResumoVeiculo({
             step={1000}
             value={valorBem}
             onChange={(e) => onValorBemChange(Number(e.target.value) || 0)}
-            className="w-full bg-base border border-surface-2 rounded-lg pl-10 pr-3 py-2 text-ink text-sm focus:outline-none focus:border-indigo-500 transition-colors"
+            className="w-full bg-base border border-surface-2 rounded-lg pl-10 pr-3 py-2 text-ink text-sm focus:outline-none focus:border-accent-500 transition-colors"
           />
         </div>
       </div>
@@ -55,7 +55,7 @@ export function ResumoVeiculo({
       <div>
         <div className="flex justify-between mb-2">
           <span className="text-xs text-slate-400">Ajustar entrada</span>
-          <span className="text-xs font-bold text-indigo-300">{percentualEntrada}% do valor</span>
+          <span className="text-xs font-bold text-accent-300">{percentualEntrada}% do valor</span>
         </div>
         <input
           type="range"
@@ -64,7 +64,7 @@ export function ResumoVeiculo({
           step={500}
           value={Math.min(entrada, entradaMax)}
           onChange={(e) => onEntradaChange(Number(e.target.value))}
-          className="w-full text-indigo-500 cursor-pointer"
+          className="w-full text-accent-500 cursor-pointer"
         />
         <div className="flex justify-between mt-1">
           <span className="text-[10px] text-slate-600">R$ 0</span>

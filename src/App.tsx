@@ -59,10 +59,10 @@ export default function App() {
 function Header() {
   return (
     <header className="mb-8">
-      <p className="text-[11px] font-bold tracking-[0.2em] uppercase text-indigo-500 mb-2">
+      <p className="text-[11px] font-bold tracking-[0.2em] uppercase text-accent-500 mb-2">
         Simulador
       </p>
-      <h1 className="text-3xl font-extrabold m-0 bg-linear-to-br from-ink to-indigo-300 bg-clip-text text-transparent">
+      <h1 className="text-3xl font-extrabold m-0 bg-linear-to-br from-ink to-accent-300 bg-clip-text text-transparent">
         Financiamento de Veículo
       </h1>
     </header>

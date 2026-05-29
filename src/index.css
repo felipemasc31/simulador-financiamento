@@ -6,6 +6,13 @@
   --color-surface-2: #1e1e2e;
   --color-ink: #e8e8f0;
 
+  --color-accent-300: #57d4d4;
+  --color-accent-400: #3cc8c8;
+  --color-accent-500: #30c1c1;
+  --color-accent-700: #1c7e7e;
+  --color-accent-900: #0f4444;
+  --color-accent-950: #0a2e2e;
+
   --font-sans: "DM Sans", "Segoe UI", system-ui, sans-serif;
 }
 

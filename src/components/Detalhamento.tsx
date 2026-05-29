@@ -20,7 +20,7 @@ export function Detalhamento({ totalJuros, totalPago, custoTotal }: Props) {
       </div>
       <div className="flex justify-between items-center py-2.5">
         <span className="text-sm text-slate-400">Custo total (entrada + parcelas)</span>
-        <span className="text-sm font-extrabold text-indigo-300">{formatBRL(custoTotal)}</span>
+        <span className="text-sm font-extrabold text-accent-300">{formatBRL(custoTotal)}</span>
       </div>
     </Card>
   );

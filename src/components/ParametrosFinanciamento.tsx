@@ -67,7 +67,7 @@ export function ParametrosFinanciamento({
                 onClick={() => onMesesChange(m)}
                 className={`flex-1 py-2.5 rounded-xl font-bold text-sm transition-colors ${
                   ativo
-                    ? "border border-indigo-500 bg-indigo-900 text-indigo-300"
+                    ? "border border-accent-500 bg-accent-900 text-accent-300"
                     : "border border-surface-2 bg-base text-slate-500 hover:text-slate-300"
                 }`}
               >
